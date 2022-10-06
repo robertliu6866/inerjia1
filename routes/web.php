@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('insex', function () {
+    return view('welcome');
+});
+Route::get('tec', function () {
     return view('welcome');
 });
