@@ -13,6 +13,7 @@
 </template>
 
 <script>
+//Link轉換成ＸＨＲ
 import {Link} from '@inertiajs/inertia-vue3';
 
 
