@@ -19,8 +19,10 @@ Route::get('/', function () {
     return Inertia::render('Home');
 });
 Route::get('/users', function () {
+    sleep (2);
     return Inertia::render('Users');
 });
-Route::get('/setting', function () {
-    return Inertia::render('Setting');
+
+Route:: post('/logout', function () {
+     dd('登出');
 });
