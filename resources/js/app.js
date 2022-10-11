@@ -1,7 +1,6 @@
-import { createApp, h } from 'vue'
-import { createInertiaApp } from '@inertiajs/inertia-vue3'
-import { InertiaProgress } from '@inertiajs/progress'
-import { colors } from 'laravel-mix/src/Log';
+import { createApp, h } from 'vue';
+import { createInertiaApp } from '@inertiajs/inertia-vue3';
+
 
 
 
@@ -12,8 +11,4 @@ createInertiaApp({
       .use(plugin)
       .mount(el)
   },
-});
-InertiaProgress.init({
-  color: 'red',
-  showSpinner: true,
 });
