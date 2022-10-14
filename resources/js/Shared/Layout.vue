@@ -1,0 +1,42 @@
+
+    <template>
+
+ <section class="p-6 bg-gray-200">
+
+     
+     
+     <header class="flex justify-between" >
+         
+         <div class="flex items-center">
+
+             <h1 class="font-bold text-lg">
+                 My App
+                </h1>
+                <p class="text-sm"> 歡迎,{{ username }} </p>
+            </div>
+
+            <Nav/>
+            
+        </header> 
+    </section>
+<AppSection  class="p-6">
+    <div class="max-w-3xl mx-auto">
+
+        <slot/>
+    </div>
+</AppSection>
+
+
+    </template>
+
+
+<script>
+import Nav from "./Nav";
+
+export default {
+components: {Nav},
+
+
+};
+
+</script>
