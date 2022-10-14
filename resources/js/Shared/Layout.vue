@@ -12,7 +12,7 @@
              <h1 class="font-bold text-lg">
                  My App
                 </h1>
-                <p class="text-sm"> 歡迎,{{ username }} </p>
+                <p class="text-sm"> 歡迎,{{$page.props.auth.user. username }} </p>
             </div>
 
             <Nav/>
