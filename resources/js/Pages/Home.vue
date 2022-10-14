@@ -1,16 +1,22 @@
 <template>
-<h1> Hello </h1>
+<Layout>
 
-<Nav />
+    <h1> Hello </h1>
+
+</Layout>
 </template>
 
 <script>
 
-import Nav from "../Shared/Nav";
+import Layout from "../Shared/Layout";
 
 
 export default {
-    components:{ Nav },
+    components:{ Layout },
+  
 };
 
 </script>
+
+
+

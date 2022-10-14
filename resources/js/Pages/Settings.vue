@@ -1,16 +1,18 @@
 <template>
-    <h1> Settings</h1>
-    
+   <Layout>
+       <h1> Settings</h1>
+    </Layout>
+       
     <Nav />
     </template>
     
     <script>
-    
-    import Nav from "../Shared/Nav";
+
+    import Layout from "../Shared/Layout";
     
     
     export default {
-        components: { Nav },
+        components:{ Layout },
     };
     
     </script>
