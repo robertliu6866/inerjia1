@@ -1,22 +1,25 @@
 <template>
-<Layout>
 
-    <h1> Hello </h1>
+ <h1 class="text-3xl">
 
-</Layout>
+     Hello 
+    </h1>
+
 </template>
 
-<script>
+
+<!-- <script >
 
 import Layout from "../Shared/Layout";
 
+export default{
+  layout: Layout
 
-export default {
-    components:{ Layout },
-  
 };
 
-</script>
+
+
+</script> -->
 
 
 
