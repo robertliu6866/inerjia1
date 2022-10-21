@@ -1,4 +1,12 @@
 <template>
+<Head>
+    <title>找尋山友</title>
+
+<meta type="description" 
+content="home information"
+ head-key="discription">
+</Head> 
+
 
 
  <h1 class="text-3xl">
@@ -9,19 +17,14 @@
 
 </template>
 
+<script setup>
 
-<script >
-
-import Layout from "../Shared/Layout";
-
-export default{
-  layout: Layout
-
-};
-
-
+import {Head } from "@inertiajs/inertia-vue3";
 
 </script>
+
+
+
 
 
 

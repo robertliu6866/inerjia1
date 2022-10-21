@@ -1,5 +1,5 @@
 <template>
-  
+  <Head title="Settings" />
    
        <h1> Settings</h1>
   
@@ -7,15 +7,5 @@
 
 
     
-    <script >
 
-    import Layout from "../Shared/Layout";
-
-    export default {
-        layout: Layout
-    }
-
-    </script>
-    
-   
        

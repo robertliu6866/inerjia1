@@ -1,5 +1,6 @@
 <template>
-
+ <Head title="Users" />
+ 
        <h1> Users
          </h1>
        
@@ -18,14 +19,8 @@
 
     </template>
     
-    <script >
-
-    import Layout from "../Shared/Layout";
-   
-    export default {
-       layout:Layout,
-       props: { time:String}
-        
-    };
+  
+    <script setup>
+    defineProps({ time: String });
     </script>
     
