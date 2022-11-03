@@ -1,4 +1,4 @@
-<template>
+ <template>
  <Head title="Users" />
  
        <h1> Users
@@ -43,13 +43,23 @@
     </div>
   </div>
 
+  <Pagination :links="users.links" />
+
+
+</template>
  
 
-
-    </template>
     
   
     <script setup>
+    import Pagination from "../Shared/Pagination.vue";
+
     defineProps({ users: Object});
     </script>
+
+
     
+    
+    
+
+  
