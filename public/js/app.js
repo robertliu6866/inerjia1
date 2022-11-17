@@ -26882,6 +26882,14 @@ function compileToFunction(template, options) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Auth/Login": [
+		"./resources/js/Pages/Auth/Login.vue",
+		"resources_js_Pages_Auth_Login_vue"
+	],
+	"./Auth/Login.vue": [
+		"./resources/js/Pages/Auth/Login.vue",
+		"resources_js_Pages_Auth_Login_vue"
+	],
 	"./Home": [
 		"./resources/js/Pages/Home.vue",
 		"resources_js_Pages_Home_vue"
@@ -26889,6 +26897,14 @@ var map = {
 	"./Home.vue": [
 		"./resources/js/Pages/Home.vue",
 		"resources_js_Pages_Home_vue"
+	],
+	"./Php": [
+		"./resources/js/Pages/Php.vue",
+		"resources_js_Pages_Php_vue"
+	],
+	"./Php.vue": [
+		"./resources/js/Pages/Php.vue",
+		"resources_js_Pages_Php_vue"
 	],
 	"./Settings": [
 		"./resources/js/Pages/Settings.vue",
@@ -26898,13 +26914,21 @@ var map = {
 		"./resources/js/Pages/Settings.vue",
 		"resources_js_Pages_Settings_vue"
 	],
-	"./Users": [
-		"./resources/js/Pages/Users.vue",
-		"resources_js_Pages_Users_vue"
+	"./Users/Create": [
+		"./resources/js/Pages/Users/Create.vue",
+		"resources_js_Pages_Users_Create_vue"
 	],
-	"./Users.vue": [
-		"./resources/js/Pages/Users.vue",
-		"resources_js_Pages_Users_vue"
+	"./Users/Create.vue": [
+		"./resources/js/Pages/Users/Create.vue",
+		"resources_js_Pages_Users_Create_vue"
+	],
+	"./Users/Index": [
+		"./resources/js/Pages/Users/Index.vue",
+		"resources_js_Pages_Users_Index_vue"
+	],
+	"./Users/Index.vue": [
+		"./resources/js/Pages/Users/Index.vue",
+		"resources_js_Pages_Users_Index_vue"
 	]
 };
 function webpackAsyncContext(req) {
@@ -27013,6 +27037,18 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -27043,7 +27079,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Home_vue":1,"resources_js_Pages_Settings_vue":1,"resources_js_Pages_Users_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_Login_vue":1,"resources_js_Pages_Home_vue":1,"resources_js_Pages_Php_vue":1,"resources_js_Pages_Settings_vue":1,"resources_js_Pages_Users_Create_vue":1,"resources_js_Pages_Users_Index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
