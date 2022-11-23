@@ -12,6 +12,8 @@ class UserPolicy
   public function create(User $user)
 
   {
-    return $user ->email === 'lisa.chen@gmail.com';
+    return $user ->email === 'popo@gmail.com';
   }
+
+ 
 }
