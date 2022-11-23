@@ -5,7 +5,7 @@
   <div class="flex items-center">
 
     <h1 class="text-3xl">Users</h1>
-    <Link href="/users/create" class="text-blue-500 text-sm ml-3">New User</Link>
+    <Link v-if="can.createUser"  href="/users/create" class="text-blue-500 text-sm ml-3">New User</Link>
   </div>
 
     <input v-model="search" type="text" placeholder="Search..." class="border px-2 rounded-lg" />
@@ -62,8 +62,11 @@ import  {ref,watch} from "vue";
 import {Inertia} from "@inertiajs/inertia";
 import throttle from "lodash/throttle";
 
-let props = defineProps({ users: Object,
-  filters: Object
+let props = defineProps({ 
+  users: Object,
+  filters: Object,
+  can: Object
+  
  });
 
 let search = ref (props.filters.search);

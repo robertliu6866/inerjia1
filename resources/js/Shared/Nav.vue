@@ -21,6 +21,12 @@
                 Sttings
             </NavLink>
             </li>
+
+            <li>
+              <NavLink href="/logout" method="post">
+                Log Out
+            </NavLink>
+            </li>
           </ul>
         </nav>
 

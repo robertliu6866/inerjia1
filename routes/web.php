@@ -17,6 +17,8 @@ use  App\Http\Controllers\Auth\LoginController;
 |
 */
 Route::get ('login',[LoginController::class,'create'])->name('login');
+Route::post('login',[LoginController::class,'store']);
+Route::post('logout',[LoginController::class,'destroy'])->middleware('auth');
 
 Route::middleware('auth')->group(function(){
  
@@ -43,8 +45,11 @@ Route::middleware('auth')->group(function(){
                 'name' => $user->name
             ]),
             
-            'filters' => Request::only(['search'])
-            
+            'filters' => Request::only(['search']),
+             'can' => [
+                'createUser' => Auth:: user()->can('create',User::class)
+             ]
+          
         ]);
     });
     
@@ -52,7 +57,9 @@ Route::middleware('auth')->group(function(){
     
     Route::get('/users/create', function () {
         return Inertia::render('Users/Create');
-    });
+    })->middleware('can:create,App\Models\User');
+
+
     
     Route::post('/users', function () {
         $attributes = Request::validate([
